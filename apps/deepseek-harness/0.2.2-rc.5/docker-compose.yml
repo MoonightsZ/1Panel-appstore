@@ -7,6 +7,7 @@ services:
       - 1panel-network
     environment:
       HTTPS_ACCESS_HOST: ${HTTPS_ACCESS_HOST}
+      DSH_AUTH_ENABLED: ${DSH_AUTH_ENABLED}
       DSH_AUTH_USERNAME: ${DSH_AUTH_USERNAME}
       DSH_AUTH_PASSWORD: ${DSH_AUTH_PASSWORD}
       DSH_HOME: /data/dsh

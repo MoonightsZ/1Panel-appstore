@@ -47,6 +47,34 @@ additionalProperties:
         en: Enter the IPv4 address or hostname used in the browser, without https:// or a port. For example, 192.168.1.10.
         zh: 填写浏览器实际使用的 IPv4 地址或主机名，不要包含 https:// 和端口，例如 192.168.1.10。
         zh-Hant: 填寫瀏覽器實際使用的 IPv4 位址或主機名稱，不要包含 https:// 和連接埠，例如 192.168.1.10。
+    - default: "ON"
+      edit: true
+      envKey: DSH_AUTH_ENABLED
+      labelEn: Web Authentication
+      labelZh: Web 登录验证
+      required: true
+      type: switch
+      values:
+        - label: "ON"
+          value: "ON"
+        - label: "OFF"
+          value: "OFF"
+      label:
+        en: Web Authentication
+        es-es: Autenticacion web
+        fa: احراز هویت وب
+        ja: Web 認証
+        ms: Pengesahan Web
+        pt-br: Autenticacao web
+        ru: Веб-аутентификация
+        ko: 웹 인증
+        zh-Hant: Web 登入驗證
+        zh: Web 登录验证
+        tr: Web Kimlik Dogrulama
+      description:
+        en: No login allows anyone who can reach the HTTPS port to use Harness. The username and password fields below are ignored in this mode.
+        zh: 免登录模式允许任何能够访问 HTTPS 端口的人使用 Harness，此模式下方的用户名和密码不会生效。
+        zh-Hant: 免登入模式允許任何能夠存取 HTTPS 埠的人使用 Harness，此模式下方的使用者名稱和密碼不會生效。
     - default: admin
       edit: true
       envKey: DSH_AUTH_USERNAME
